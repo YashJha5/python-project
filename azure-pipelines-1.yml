@@ -65,7 +65,6 @@ stages:
 
     - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       artifact: drop
-
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
@@ -90,3 +89,4 @@ stages:
               appType: functionAppLinux
               appName: $(functionAppName)
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+    
