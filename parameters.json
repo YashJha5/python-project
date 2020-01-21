@@ -6,40 +6,40 @@
             "value": "5efa937f-30e8-457b-8cbc-7d2784acc484"
         },
         "name": {
-            "value": "testing-function123"
+            "value": "phenomenalyashjha"
         },
         "location": {
-            "value": "South India"
+            "value": "East Asia"
         },
         "hostingEnvironment": {
             "value": ""
         },
         "hostingPlanName": {
-            "value": "ASP-yashresource1-a2ca"
+            "value": "ASP-yashresource2-a835"
         },
         "serverFarmResourceGroup": {
-            "value": "yash_resource1"
+            "value": "yash_resource2"
         },
         "alwaysOn": {
-            "value": true
+            "value": false
         },
         "storageAccountName": {
-            "value": "storageaccountyashr9c97"
+            "value": "storageaccountyashra285"
         },
         "linuxFxVersion": {
-            "value": "DOCKER|mcr.microsoft.com/azure-functions/python:2.0-python3.7-appservice"
+            "value": "python|3.7"
         },
         "sku": {
-            "value": "PremiumV2"
+            "value": "Dynamic"
         },
         "skuCode": {
-            "value": "P1v2"
+            "value": "Y1"
         },
         "workerSize": {
-            "value": "3"
+            "value": "0"
         },
         "workerSizeId": {
-            "value": "3"
+            "value": "0"
         },
         "numberOfWorkers": {
             "value": "1"
