@@ -48,7 +48,7 @@ stages:
         sudo apt-get install mysql
         sudo apt-get autoremove
         pip3 install flask_mysqldb
-        python -m venv worker_venv
+        python3 -m venv worker_venv
         source worker_venv/bin/activate
         pip3 install -r requirements.txt
       workingDirectory: $(workingDirectory)
