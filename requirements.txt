@@ -1,4 +1,4 @@
+--upgrade pip
 azure-functions
 flask
 flask-mysqldb
-pyyaml
