@@ -54,7 +54,7 @@
             "location": "[parameters('location')]",
             "tags": null,
             "dependsOn": [
-                "microsoft.insights/components/testing-function123",
+                "microsoft.insights/components/phenomenalyashjha",
                 "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
                 "[concat('Microsoft.Storage/storageAccounts/', parameters('storageAccountName'))]"
             ],
@@ -72,15 +72,14 @@
                         },
                         {
                             "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
-                            "value": "[reference('microsoft.insights/components/testing-function123', '2015-05-01').InstrumentationKey]"
+                            "value": "[reference('microsoft.insights/components/phenomenalyashjha', '2015-05-01').InstrumentationKey]"
                         },
                         {
                             "name": "AzureWebJobsStorage",
                             "value": "[concat('DefaultEndpointsProtocol=https;AccountName=',parameters('storageAccountName'),';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountName')), '2019-06-01').keys[0].value,';EndpointSuffix=','core.windows.net')]"
                         }
                     ],
-                    "linuxFxVersion": "[parameters('linuxFxVersion')]",
-                    "alwaysOn": "[parameters('alwaysOn')]"
+                    "linuxFxVersion": "[parameters('linuxFxVersion')]"
                 },
                 "serverFarmId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/', parameters('serverFarmResourceGroup'), '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
                 "hostingEnvironment": "[parameters('hostingEnvironment')]",
@@ -110,9 +109,9 @@
         },
         {
             "apiVersion": "2015-05-01",
-            "name": "testing-function123",
+            "name": "phenomenalyashjha",
             "type": "microsoft.insights/components",
-            "location": "centralindia",
+            "location": "eastasia",
             "tags": null,
             "properties": {
                 "ApplicationId": "[parameters('name')]",
