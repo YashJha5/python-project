@@ -44,6 +44,7 @@ stages:
         versionSpec: 3.6 # Functions V2 supports Python 3.6 as of today
 
     - bash: |
+        apt-get install python3-pip
         python3 -m venv worker_venv
         source worker_venv/bin/activate
         pip3 install -r requirements.txt
