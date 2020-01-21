@@ -11,7 +11,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
         {
 
-            "name": "Azure Functions",
+            "name": "Onion",
 
             "price": 0.01
         }
